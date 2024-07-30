@@ -12,8 +12,6 @@ header {
 }
 
 
-
-
 #top-nav{
     display: flex;
     width:100%;
@@ -34,6 +32,7 @@ header {
     color: #007ee5;
     font-weight: normal;
     text-decoration: none;
+    padding-top:10px;
 }
 
 
