@@ -1,0 +1,10 @@
+.hero,  .three-banners-section, .image-text-section{
+display: flex;
+    justify-content: space-between;
+}
+
+
+.cta-section{
+    width:100%;
+    text-align: center;
+}

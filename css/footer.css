@@ -1,0 +1,38 @@
+
+footer {
+    display: flex;
+    background: #fff;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px!important;
+
+}
+
+.footer-menu-heading{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.footer-column {
+    flex: 1;
+    padding: 1rem;
+}
+
+.footer-column h4 {
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
