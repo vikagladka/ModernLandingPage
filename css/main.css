@@ -121,8 +121,6 @@ main {
         flex-grow: 2;
 
     }
-
-
 }
 
 @media (max-width: 770px) {
@@ -132,7 +130,6 @@ main {
     }
 }
 
-
 @media (max-width: 640px) {
     .three-banners-section, .image-text-section {
         text-align: center;
@@ -141,20 +138,17 @@ main {
         flex-wrap: wrap;
     }
 
-
-   /*my comment*/
-
     .image-text-section div {
         width: 100%;
         justify-content: center;
         margin: 20px 0;
     }
 
-    .text-right-variation, .text-left-variation{
+    .text-right-variation, .text-left-variation {
         flex-direction: column-reverse;
     }
 
-    .text-right-variation div, .text-left-variation div{
+    .text-right-variation div, .text-left-variation div {
         margin: 5px 0;
     }
 
