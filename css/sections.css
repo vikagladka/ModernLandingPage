@@ -1,10 +1,32 @@
-.hero,  .three-banners-section, .image-text-section{
-display: flex;
+.three-banners-section, .image-text-section {
+    display: flex;
     justify-content: space-between;
+    margin: 90px 0;
 }
 
 
-.cta-section{
-    width:100%;
+.banner {
     text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 0 rgba(69, 69, 69, 0.35);
+    max-height: 270px;
+    max-width: 265px;
+    padding: 60px 40px 60px 40px;
+    margin: 15px 0;
 }
+
+
+.banner p {
+    margin-top: 20px
+}
+
+.image-text-section img {
+    max-width: 270px;
+    height: auto;
+}
+
+.text-left-variation {
+    flex-direction: row-reverse;
+}
+

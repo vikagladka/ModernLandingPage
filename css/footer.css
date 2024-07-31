@@ -1,23 +1,31 @@
 
 footer {
     display: flex;
-    background: #fff;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
     max-width: 940px;
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 14px!important;
+    font-size: 14px !important;
 
 }
 
-.footer-menu-heading{
+.footer-menu-heading {
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 
 .footer-column {
-    flex: 1;
+    flex-grow: 1;
     padding: 1rem;
+}
+
+#rights-footer {
+    flex-grow: 2;
+
 }
 
 .footer-column h4 {

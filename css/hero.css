@@ -1,0 +1,17 @@
+.hero {
+    margin-top: 55px;
+    padding-top: 0;
+    display: block;
+    text-align: center;
+
+}
+
+.hero h1 {
+    margin: 35px 0;
+}
+
+.hero img {
+    max-width: 720px;
+    width: 100%;
+    height: auto;
+}
