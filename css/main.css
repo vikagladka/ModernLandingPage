@@ -30,23 +30,19 @@ body {
 
 h1 {
     font-size: 48px;
-
 }
 
 h2 {
     font-size: 40px;
-
 }
 
 h3 {
     font-size: 37px;
-
 }
 
 
 h1, h2, h3 {
     line-height: 1.2;
-
 }
 
 
@@ -111,7 +107,6 @@ main {
 
     #rights-footer {
         flex-grow: 2;
-
     }
 }
 
@@ -161,17 +156,14 @@ main {
 
     h1 {
         font-size: 30px;
-
     }
 
     h2 {
         font-size: 26px;
-
     }
 
     h3 {
         font-size: 22px;
-
     }
 
     #top-nav {
