@@ -1,9 +1,10 @@
+/*hero css */
+
 .hero {
     margin-top: 55px;
     padding-top: 0;
     display: block;
     text-align: center;
-
 }
 
 .hero h1 {
