@@ -12,7 +12,6 @@ header {
     box-shadow: 0 0 7px 0 rgba(69, 69, 69, 0.35);
 }
 
-
 #top-nav {
     max-width: 940px;
     margin-left: auto;
@@ -44,7 +43,6 @@ header {
 #header-logo {
     padding: 10px;
 }
-
 
 button.sign-in {
     background-color: #007ee5;

@@ -10,7 +10,6 @@
 @import url('section-cta.css');
 @import url('footer.css');
 
-
 :root {
     --main-color: #454545;
     --accent-color: #007ee5;
@@ -40,11 +39,9 @@ h3 {
     font-size: 37px;
 }
 
-
 h1, h2, h3 {
     line-height: 1.2;
 }
-
 
 main {
     max-width: 940px;
@@ -54,9 +51,7 @@ main {
     padding: 0 20px;
 }
 
-
 /*media queries start*/
-
 
 @media (max-width: 920px) {
     .three-banners-section {
@@ -71,7 +66,6 @@ main {
         padding: 20px 10px;
     }
 }
-
 
 @media (max-width: 865px) {
 
@@ -99,7 +93,6 @@ main {
         font-weight: 600;
         margin-bottom: 10px;
     }
-
 
     .footer-column {
         width: 22%;
@@ -147,7 +140,6 @@ main {
 
 }
 
-
 @media (max-width: 480px) {
 
     body {
@@ -185,7 +177,6 @@ main {
         width: 30%;
     }
 }
-
 
 @media (max-width: 320px) {
 
