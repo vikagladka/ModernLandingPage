@@ -5,13 +5,13 @@
 }
 
 .banner {
+    max-height: 270px;
+    max-width: 265px;
+    padding: 60px 40px 60px 40px;
     text-align: center;
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 0 0 7px 0 rgba(69, 69, 69, 0.35);
-    max-height: 270px;
-    max-width: 265px;
-    padding: 60px 40px 60px 40px;
     margin: 15px 0;
 }
 
