@@ -1,9 +1,5 @@
-/* main.css */
 
-/* Reset Styles */
 @import url('reset.css');
-
-/* Component Styles */
 @import url('header.css');
 @import url('hero.css');
 @import url('sections.css');
@@ -17,7 +13,6 @@
     --button-accent-secondary: #302d2d;
 }
 
-/* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
