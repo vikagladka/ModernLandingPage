@@ -27,23 +27,23 @@ body {
     background: #fbfbfb;
 }
 
-h1 {
+.h1 {
     font-size: 48px;
 }
 
-h2 {
+.h2 {
     font-size: 40px;
 }
 
-h3 {
+.h3 {
     font-size: 37px;
 }
 
-h1, h2, h3 {
+.h1, .h2, .h3 {
     line-height: 1.2;
 }
 
-main {
+.main {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -51,93 +51,19 @@ main {
     padding: 0 20px;
 }
 
-/*media queries start*/
-
-@media (max-width: 920px) {
-    .three-banners-section {
-        text-align: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .banner {
-        margin: 20px;
-        width: 28%;
-        padding: 20px 10px;
-    }
-}
-
 @media (max-width: 865px) {
 
-    h1 {
+    .h1 {
         font-size: 36px;
     }
 
-    h2 {
+    .h2 {
         font-size: 30px;
     }
 
-    h3 {
+    .h3 {
         font-size: 27px;
-
     }
-
-    footer {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        font-size: 14px;
-
-    }
-
-    .footer-menu-heading {
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-
-    .footer-column {
-        width: 22%;
-    }
-
-    #rights-footer {
-        flex-grow: 2;
-    }
-}
-
-@media (max-width: 770px) {
-    .banner {
-        margin: 10px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    .three-banners-section, .image-text-section {
-        text-align: center;
-        justify-content: center;
-        margin: 30px 0;
-        flex-wrap: wrap;
-    }
-
-    .image-text-section div {
-        width: 100%;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    .text-right-variation, .text-left-variation {
-        flex-direction: column-reverse;
-    }
-
-    .text-right-variation div, .text-left-variation div {
-        margin: 5px 0;
-    }
-
-    .banner {
-        margin-bottom: 35px;
-        width: 100%;
-        justify-content: center;
-    }
-
 }
 
 @media (max-width: 480px) {
@@ -146,44 +72,32 @@ main {
         font-size: 18px;
     }
 
-    h1 {
+    .h1 {
         font-size: 30px;
     }
 
-    h2 {
+    .h2 {
         font-size: 26px;
     }
 
-    h3 {
+    .h3 {
         font-size: 22px;
     }
 
-    #top-nav {
+    .header-nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #header-logo {
+    .main-header img {
         max-height: 50px;
-    }
-
-    .banner {
-        margin: 10px;
-        max-width: 100%;
-    }
-
-    .footer-column {
-        width: 30%;
     }
 }
 
 @media (max-width: 320px) {
-
     body {
-
         font-size: 17px;
-
     }
 
     .banner {
@@ -191,14 +105,11 @@ main {
         padding: 10px;
     }
 
-    header {
+    .main-header {
         padding: 0 5px;
     }
 
-    #top-nav-ul li {
+    .header-nav ul li {
         margin-right: 10px;
-
     }
 }
-
-/*media queries end*/

@@ -7,12 +7,12 @@
     text-align: center;
 }
 
-.hero h1 {
+.hero-heading {
     margin: 35px 0;
 }
 
 .hero img {
-    max-width: 720px;
     width: 100%;
+    max-width: 720px;
     height: auto;
 }

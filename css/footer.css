@@ -1,6 +1,4 @@
-/*footer css */
-
-footer {
+.main-footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -9,7 +7,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
-
 }
 
 .footer-menu-heading {
@@ -22,7 +19,7 @@ footer {
     padding: 5px;
 }
 
-#rights-footer {
+.footer-column:last-of-type {
     flex-grow: 2;
     padding-top: 36px;
 }
@@ -31,15 +28,44 @@ footer {
     margin-bottom: 1rem;
 }
 
-footer ul {
+.main-footer ul {
     list-style: none;
 }
 
-footer a {
+.main-footer a {
     text-decoration: none;
     color: #333;
 }
 
-footer a:hover {
+.main-footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 865px) {
+
+    .main-footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 14px;
+    }
+
+    .footer-menu-heading {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .footer-column {
+        width: 22%;
+    }
+
+    .footer-column:last-of-type {
+        flex-grow: 2;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-column {
+        width: 30%;
+    }
 }

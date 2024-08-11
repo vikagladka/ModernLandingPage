@@ -28,3 +28,60 @@
     flex-direction: row-reverse;
 }
 
+@media (max-width: 920px) {
+    .three-banners-section {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        margin: 20px;
+        padding: 20px 10px;
+        width: 28%;
+
+    }
+}
+
+@media (max-width: 770px) {
+    .banner {
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .three-banners-section, .image-text-section {
+        margin: 30px 0;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-text-section div {
+        margin: 20px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .text-right-variation, .text-left-variation {
+        flex-direction: column-reverse;
+    }
+
+    .text-right-variation div, .text-left-variation div {
+        margin: 5px 0;
+    }
+
+    .banner {
+        margin-bottom: 35px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        margin: 10px;
+        max-width: 100%;
+    }
+}
