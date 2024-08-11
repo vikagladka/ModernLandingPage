@@ -1,0 +1,29 @@
+.cta-section {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
+    box-shadow: 0 0 7px 0 rgba(69, 69, 69, 0.35);
+
+    .h3 {
+        margin-bottom: 35px;
+    }
+
+    button {
+        height: 60px;
+        width: 250px;
+        margin: 15px;
+        border-radius: var(--border-radius);
+        border: none;
+        color: #ffffff;
+
+        &.button-grey {
+            background: var(--button-accent-secondary);
+        }
+
+        &.button-blue {
+            background: var(--accent-color);
+        }
+    }
+}
