@@ -60,3 +60,33 @@ button.sign-in:focus {
     color: #ffffff;
     outline: none;
 }
+@media (max-width: 480px) {
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-header img {
+        max-height: 50px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    body {
+        font-size: 17px;
+    }
+
+    .banner {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .main-header {
+        padding: 0 5px;
+    }
+
+    .header-nav ul li {
+        margin-right: 10px;
+    }
+}
