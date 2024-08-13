@@ -55,9 +55,9 @@ button.sign-in {
 
     &:hover,
     &:focus {
-        background-color: $main-color; // Використання SCSS змінної
-    color: #ffffff;
+        color: #ffffff;
         outline: none;
+        background-color: $main-color;
     }
 }
 

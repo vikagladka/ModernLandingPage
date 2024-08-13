@@ -14,16 +14,16 @@
         height: 60px;
         width: 250px;
         margin: 15px;
-        border-radius: var(--border-radius);
+        border-radius: $border-radius;
         border: none;
         color: #ffffff;
 
         &.button-grey {
-            background: var(--button-accent-secondary);
+            background: $button-accent-secondary;
         }
 
         &.button-blue {
-            background: var(--accent-color);
+            background: $accent-color;
         }
     }
 }

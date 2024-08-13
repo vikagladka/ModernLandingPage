@@ -1,13 +1,8 @@
-$main-color: #454545;
-$accent-color: #007ee5;
-$border-radius: 5px;
-$button-accent-secondary: #302d2d;
-
-body {
+.body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 200;
-    color: $main-color;
+    color: #454545;
     line-height: 1.6;
     background: #fbfbfb;
 }
@@ -36,7 +31,6 @@ body {
     padding: 0 20px;
 }
 
-// Медіа-запити
 @media (max-width: 865px) {
     .h1 {
         font-size: 36px;
@@ -52,7 +46,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    body {
+    .body {
         font-size: 18px;
     }
 
@@ -70,7 +64,7 @@ body {
 }
 
 @media (max-width: 320px) {
-    body {
+    .body {
         font-size: 17px;
     }
 }
