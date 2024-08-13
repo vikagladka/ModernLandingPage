@@ -9,120 +9,122 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   </head>
-  <body class="body">
-    <header class="main-header">
-      <nav class="header-nav">
-        <img alt="Logo" src="images/eye.png" />
-        <ul>
-          <li><a href="#hero">Pricing</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><button aria-label="Sign In" class="sign-in">Sign In</button></li>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <img class="header__logo" alt="Logo" src="images/eye.png" />
+        <ul class="header__list">
+          <li class="header__item"><a href="#hero">Pricing</a></li>
+          <li class="header__item"><a href="#about">About</a></li>
+          <li class="header__item"><a href="#contact">Contact</a></li>
+          <li class="header__tem"><button class="header__sign-in-button" aria-label="Sign In">Sign In</button></li>
         </ul>
       </nav>
     </header>
 
-    <main class="main">
-      <section class="hero">
-        <h1 class="h1 hero-heading">All in One Marketing Platform</h1>
-        <img alt="Hero Image" src="images/hero.png" />
-      </section>
-      <section class="three-banners-section">
-        <div class="banner">
-          <img alt="page icon" src="images/page.png" />
-          <p>Create Unlimited Property Pages</p>
-        </div>
-        <div class="banner">
-          <img alt="template icon" src="images/template.png" />
-          <p>Choose over 15 Premade Templates</p>
-        </div>
-        <div class="banner">
-          <img alt="eye icon" src="images/eye.png" />
-          <p>Made for Real Estate Companies</p>
-        </div>
-      </section>
-      <section class="image-text-section text-right-variation">
-        <div>
-          <h2 class="h2">
-            Built in Lead Generation<br />
-            Mega Tools for You
-          </h2>
-          <p>Collect instant leads with Facebook Ad</p>
-          <p>Campaign built in our EstateLead system</p>
-        </div>
-        <div><img alt="page icon" src="images/page-wind.png" /></div>
-      </section>
-      <section class="image-text-section text-left-variation">
-        <div>
-          <h2>
-            Built in Lead Generation<br />
-            Mega Tools for You
-          </h2>
-          <p>Collect instant leads with Facebook Ad</p>
-          <p>Campaign built in our EstateLead system</p>
-        </div>
-        <div><img alt="tag icon" src="images/tag-wind.png" /></div>
-      </section>
-      <section class="image-text-section text-right-variation">
-        <div>
-          <h2>
-            Built in Lead Generation<br />
-            Mega Tools for You
-          </h2>
-          <p>Collect instant leads with Facebook Ad</p>
-          <p>Campaign built in our EstateLead system</p>
-        </div>
-        <div><img alt="eye icon" src="images/eye-wind.png" /></div>
-      </section>
-    </main>
-    <section class="cta-section">
-      <h3 class="h3">Get the Best Marketing Software Now</h3>
-      <button class="button button-grey">Register</button>
-      <button class="button button-blue">Pricing Plans</button>
-    </section>
+<main class="main">
+  <section class="hero-section">
+    <h1 class="hero-section__heading heading heading-h1">All in One Marketing Platform</h1>
+    <img class="hero-section__image" alt="Hero Image" src="images/hero.png" />
+  </section>
 
-    <footer class="main-footer">
-      <div class="footer-column">
-        <ul>
-          <li class="footer-menu-heading">Company</li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <ul>
-          <li class="footer-menu-heading">Support</li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <ul>
-          <li class="footer-menu-heading">Pricing</li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Google+</a></li>
-          <li><a href="#">Youtube</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <ul>
-          <li class="footer-menu-heading">Connect</li>
-          <li><a href="#">Free Trial</a></li>
-          <li><a href="#">Pro</a></li>
-          <li><a href="#">Unlimited</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <ul>
-          <li>All Rights Reserved 2016</li>
-          <li>Marketing Platform</li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+  <section class="three-banners">
+    <div class="three-banners__banner">
+      <img class="three-banners__image" alt="page icon" src="images/page.png" />
+      <p class="three-banners__text">Create Unlimited Property Pages</p>
+    </div>
+    <div class="three-banners__banner">
+      <img class="three-banners__image" alt="template icon" src="images/template.png" />
+      <p class="three-banners__text">Choose over 15 Premade Templates</p>
+    </div>
+    <div class="three-banners__banner">
+      <img class="three-banners__image" alt="eye icon" src="images/eye.png" />
+      <p class="three-banners__text">Made for Real Estate Companies</p>
+    </div>
+  </section>
+
+  <section class="image-text image-text--right">
+    <div class="image-text__text-block">
+      <h2 class="image-text__heading heading heading-h2">Built in Lead Generation<br />Mega Tools for You</h2>
+      <p class="image-text__paragraph">Collect instant leads with Facebook Ad</p>
+      <p class="image-text__paragraph">Campaign built in our EstateLead system</p>
+    </div>
+    <div class="image-text__image-container">
+      <img class="image-text__image" alt="page icon" src="images/page-wind.png" />
+    </div>
+  </section>
+
+  <section class="image-text image-text--left">
+    <div class="image-text__text-block">
+      <h2 class="image-text__heading heading heading-h2">Built in Lead Generation<br />Mega Tools for You</h2>
+      <p class="image-text__paragraph">Collect instant leads with Facebook Ad</p>
+      <p class="image-text__paragraph">Campaign built in our EstateLead system</p>
+    </div>
+    <div class="image-text__image-container">
+      <img class="image-text__image" alt="tag icon" src="images/tag-wind.png" />
+    </div>
+  </section>
+
+  <section class="image-text image-text--right">
+    <div class="image-text__text-block">
+      <h2 class="image-text__heading heading heading-h2">Built in Lead Generation<br />Mega Tools for You</h2>
+      <p class="image-text__paragraph">Collect instant leads with Facebook Ad</p>
+      <p class="image-text__paragraph">Campaign built in our EstateLead system</p>
+    </div>
+    <div class="image-text__image-container">
+      <img class="image-text__image" alt="eye icon" src="images/eye-wind.png" />
+    </div>
+  </section>
+</main>
+
+   <section class="cta-section">
+  <h3 class="cta-section__heading heading heading-h3">Get the Best Marketing Software Now</h3>
+  <button class="cta-section__button cta-section__button--grey">Register</button>
+  <button class="cta-section__button cta-section__button--blue">Pricing Plans</button>
+</section>
+
+<footer class="footer">
+  <div class="footer__column">
+    <ul class="footer__menu">
+      <li class="footer__menu-heading">Company</li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">About us</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Jobs</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Press</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Blog</a></li>
+    </ul>
+  </div>
+  <div class="footer__column">
+    <ul class="footer__menu">
+      <li class="footer__menu-heading">Support</li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Contact us</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Cookies</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Privacy</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+    </ul>
+  </div>
+  <div class="footer__column">
+    <ul class="footer__menu">
+      <li class="footer__menu-heading">Pricing</li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Twitter</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Google+</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Youtube</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Facebook</a></li>
+    </ul>
+  </div>
+  <div class="footer__column">
+    <ul class="footer__menu">
+      <li class="footer__menu-heading">Connect</li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Free Trial</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Pro</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Unlimited</a></li>
+    </ul>
+  </div>
+  <div class="footer__column">
+    <ul class="footer__menu">
+      <li class="footer__menu-item">All Rights Reserved 2016</li>
+      <li class="footer__menu-item">Marketing Platform</li>
+    </ul>
+  </div>
+</footer>
+</body>
 </html>
