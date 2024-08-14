@@ -2,3 +2,13 @@ $main-color: #454545;
 $accent-color: #007ee5;
 $border-radius: 5px;
 $button-accent-secondary: #302d2d;
+
+
+@mixin full-width-section ($text-align: center, $background: #ffffff){
+  box-sizing: border-box;
+  width: 100%;
+  text-align: $text-align;
+  padding: 50px 20px;
+  background: $background;
+  box-shadow: 0 0 7px 0 rgba(69, 69, 69, 0.35);
+}
