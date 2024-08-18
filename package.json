@@ -1,5 +1,26 @@
 {
+  "name": "modern-landing-page",
+  "version": "1.0.0",
+  "description": "A modern landing page project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.93.0"
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass-loader": "^13.3.1",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "sass": "^1.66.1"
   }
 }

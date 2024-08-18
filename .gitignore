@@ -5,3 +5,4 @@ temp/
 # ignore webstorm settings folder
 /.idea/
 /node_modules/
+/dist/

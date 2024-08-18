@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js', // Вхідний файл JS
+    entry: './index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/, // Для обробки SCSS файлів
+                test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
@@ -20,33 +20,33 @@ module.exports = {
                 ],
             },
             {
-                test: /\.css$/, // Для обробки CSS файлів
+                test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                 ],
             },
             {
-                test: /\.(png|jpg|gif|svg)$/, // Для обробки зображень
+                test: /\.(png|jpg|gif|svg)$/,
                 type: 'asset/resource',
             },
             {
-                test: /\.html$/, // Для обробки HTML файлів
+                test: /\.html$/,
                 use: ['html-loader'],
             },
         ],
     },
     plugins: [
-        new CleanWebpackPlugin(), // Очищує папку dist перед новою збіркою
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'styles.css',
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.html', // Шаблон HTML
+            template: 'index.html',
         }),
     ],
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
+        static: path.resolve(__dirname, 'dist'),
         compress: true,
         port: 9000,
     },
