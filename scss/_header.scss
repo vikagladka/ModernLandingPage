@@ -1,4 +1,4 @@
-.main-header {
+.header {
     height: 115px;
     padding: 0 20px;
     background: #ffffff;
@@ -10,30 +10,32 @@
     z-index: 30;
     box-shadow: 0 0 7px 0 rgba(69, 69, 69, 0.35);
 
-    img {
+    .header__logo {
         max-height: 50px;
+        margin-right: 15px;
     }
 }
 
-.header-nav {
+.header__nav {
     width: 100%;
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    align-items: center;
     display: flex;
     background: #ffffff;
 
-    ul {
+    .header__list {
         display: flex;
         list-style: none;
 
-        li {
+        .header__item {
             margin-right: 1rem;
             display: flex;
             align-items: center;
 
-            a {
+            .header__link {
                 color: #007ee5;
                 font-weight: normal;
                 text-decoration: none;
@@ -42,7 +44,7 @@
     }
 }
 
-button.sign-in {
+.header__sign-in-button {
     height: 35px;
     width: 90px;
     border: none;
@@ -62,13 +64,13 @@ button.sign-in {
 }
 
 @media (max-width: 480px) {
-    .header-nav {
+    .header__nav{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .main-header img {
+    .header__logo {
         max-height: 50px;
     }
 }
@@ -78,16 +80,16 @@ button.sign-in {
         font-size: 17px;
     }
 
-    .banner {
+    .three-banners__banner {
         margin-bottom: 10px;
         padding: 10px;
     }
 
-    .main-header {
+    .header {
         padding: 0 5px;
     }
 
-    .header-nav ul li {
+    .header__item {
         margin-right: 10px;
     }
 }

@@ -1,10 +1,10 @@
-.three-banners-section,
-.image-text-section {
+.three-banners,
+.image-text {
     display: flex;
     justify-content: space-between;
     margin: 90px 0;
 
-    .banner {
+    .three-banners__banner {
         max-height: 270px;
         max-width: 265px;
         padding: 60px 40px;
@@ -14,28 +14,28 @@
         box-shadow: 0 0 7px 0 rgba(69, 69, 69, 0.35);
         margin: 15px 0;
 
-        p {
+        .three-banners__text {
             margin-top: 20px;
         }
     }
 
-    img {
+    .image-text__image {
         max-width: 270px;
         height: auto;
     }
 
-    &.text-left-variation {
+    &.image-text--left {
         flex-direction: row-reverse;
     }
 }
 
 @media (max-width: 920px) {
-    .three-banners-section {
+    .three-banners {
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
 
-        .banner {
+        .three-banners__banner {
             margin: 20px;
             padding: 20px 10px;
             width: 28%;
@@ -44,45 +44,50 @@
 }
 
 @media (max-width: 770px) {
-    .banner {
+    .three-banners__banner {
         margin: 10px;
         width: 100%;
     }
 }
 
 @media (max-width: 640px) {
-    .three-banners-section,
-    .image-text-section {
+    .three-banners,
+    .image-text{
         margin: 30px 0;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
 
-        div {
+        .image-text__text-wrapper {
             margin: 20px 0;
             width: 100%;
             justify-content: center;
         }
 
-        &.text-right-variation,
-        &.text-left-variation {
+        &.image-text--right,
+        &.image-text--left {
             flex-direction: column-reverse;
 
-            div {
+            .image-text__text-wrapper{
                 margin: 5px 0;
+
+                .image-text__heading{
+                    margin-bottom: 15px;
+                }
             }
         }
 
-        .banner {
+        .three-banners__banner {
             margin-bottom: 35px;
             width: 100%;
             justify-content: center;
+            align-items: center;
         }
     }
 }
 
 @media (max-width: 480px) {
-    .banner {
+    .three-banners__banner {
         margin: 10px;
         max-width: 100%;
     }

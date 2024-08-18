@@ -1,11 +1,11 @@
 .cta-section {
     @include full-width-section(center, #ffffff);
 
-    .h3 {
+    .cta-section__heading {
         margin-bottom: 35px;
     }
 
-    button {
+    .cta-section__button{
         height: 60px;
         width: 250px;
         margin: 15px;
@@ -13,11 +13,11 @@
         border: none;
         color: #ffffff;
 
-        &.button-grey {
+        &.cta-section__button--grey {
             background: $button-accent-secondary;
         }
 
-        &.button-blue {
+        &.cta-section__button--blue {
             background: $accent-color;
         }
     }

@@ -1,4 +1,4 @@
-.main-footer {
+.footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -8,11 +8,11 @@
     margin-right: auto;
     font-size: 14px;
 
-    ul {
+    .footer__menu {
         list-style: none;
     }
 
-    a {
+    .footer__link {
         text-decoration: none;
         color: #333;
 
@@ -22,12 +22,12 @@
     }
 }
 
-.footer-menu-heading {
+.footer__menu-heading {
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.footer-column {
+.footer__column {
     flex-grow: 1;
     padding: 5px;
 
@@ -35,14 +35,10 @@
         flex-grow: 2;
         padding-top: 36px;
     }
-
-    h4 {
-        margin-bottom: 1rem;
-    }
 }
 
 @media (max-width: 865px) {
-    .main-footer {
+    .footer {
         flex-wrap: wrap;
         justify-content: flex-start;
         font-size: 14px;

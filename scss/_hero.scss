@@ -1,16 +1,16 @@
-.hero {
+.hero-section {
     margin-top: 55px;
     padding-top: 0;
     display: block;
     text-align: center;
 
-    img {
+    .hero-section__image {
         width: 100%;
         max-width: 720px;
         height: auto;
     }
 }
 
-.hero-heading {
+.hero-section__heading{
     margin: 35px 0;
 }
