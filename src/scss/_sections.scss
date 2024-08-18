@@ -87,8 +87,11 @@
 }
 
 @media (max-width: 480px) {
-    .three-banners__banner {
+    .three-banners,
+    .image-text {
+        .three-banners__banner {
         margin: 10px;
         width: 100%;
     }
+  }
 }

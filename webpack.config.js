@@ -4,10 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: 'images/[name][ext][query]',
+        publicPath: '/',
+        clean: true,
     },
     module: {
         rules: [
@@ -36,18 +39,21 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin({
-            filename: 'styles.css',
-        }),
-        new HtmlWebpackPlugin({
-            template: 'index.html',
-        }),
-    ],
     devServer: {
-        static: path.resolve(__dirname, 'dist'),
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
         compress: true,
         port: 9000,
     },
+    plugins: [
+        new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+            filename: './src/css/main.css',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            inject: 'body',
+        }),
+    ],
 };

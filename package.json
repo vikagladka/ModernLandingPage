@@ -2,8 +2,9 @@
   "name": "modern-landing-page",
   "version": "1.0.0",
   "description": "A modern landing page project",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "clean": "rm -rf dist",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development"
   },
@@ -18,7 +19,7 @@
     "sass-loader": "^13.3.1",
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.0"
+    "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
     "sass": "^1.66.1"
