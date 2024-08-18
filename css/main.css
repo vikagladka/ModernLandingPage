@@ -241,7 +241,7 @@ body {
   }
   .three-banners .three-banners__banner,
   .image-text .three-banners__banner {
-    margin-bottom: 35px;
+    margin: 10px 10px 35px 10px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -250,7 +250,7 @@ body {
 @media (max-width: 480px) {
   .three-banners__banner {
     margin: 10px;
-    max-width: 100%;
+    width: 100%;
   }
 }
 .cta-section {

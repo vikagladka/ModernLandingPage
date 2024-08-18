@@ -78,7 +78,7 @@
         }
 
         .three-banners__banner {
-            margin-bottom: 35px;
+            margin: 10px 10px 35px 10px;
             width: 100%;
             justify-content: center;
             align-items: center;
@@ -88,8 +88,7 @@
 
 @media (max-width: 480px) {
     .three-banners__banner {
-        margin-bottom: 11px;
-        max-width: 100%;
+        margin: 10px;
         width: 100%;
     }
 }
