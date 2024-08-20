@@ -32,6 +32,9 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|svg)$/,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext][query]',
+                },
             },
             {
                 test: /\.html$/,
@@ -49,7 +52,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: './src/css/main.css',
+            filename: './src/css/[name].css',
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
