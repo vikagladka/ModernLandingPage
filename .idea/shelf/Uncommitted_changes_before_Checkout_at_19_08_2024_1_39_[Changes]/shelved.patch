@@ -1,0 +1,32 @@
+Index: webpack.config.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const path = require('path');\r\nconst MiniCssExtractPlugin = require('mini-css-extract-plugin');\r\nconst HtmlWebpackPlugin = require('html-webpack-plugin');\r\nconst { CleanWebpackPlugin } = require('clean-webpack-plugin');\r\n\r\nmodule.exports = {\r\n    entry: './src/index.js',\r\n    output: {\r\n        filename: 'bundle.js',\r\n        path: path.resolve(__dirname, 'dist'),\r\n        assetModuleFilename: 'images/[name][ext][query]',\r\n        publicPath: '/',\r\n        clean: true,\r\n    },\r\n    module: {\r\n        rules: [\r\n            {\r\n                test: /\\.scss$/,\r\n                use: [\r\n                    MiniCssExtractPlugin.loader,\r\n                    'css-loader',\r\n                    'sass-loader',\r\n                ],\r\n            },\r\n            {\r\n                test: /\\.css$/,\r\n                use: [\r\n                    MiniCssExtractPlugin.loader,\r\n                    'css-loader',\r\n                ],\r\n            },\r\n            {\r\n                test: /\\.(png|jpg|gif|svg)$/,\r\n                type: 'asset/resource',\r\n            },\r\n            {\r\n                test: /\\.html$/,\r\n                use: ['html-loader'],\r\n            },\r\n        ],\r\n    },\r\n    devServer: {\r\n        static: {\r\n            directory: path.join(__dirname, 'dist'),\r\n        },\r\n        compress: true,\r\n        port: 9000,\r\n    },\r\n    plugins: [\r\n        new CleanWebpackPlugin(),\r\n        new MiniCssExtractPlugin({\r\n            filename: './src/css/main.css',\r\n        }),\r\n        new HtmlWebpackPlugin({\r\n            template: './src/index.html',\r\n            inject: 'body',\r\n        }),\r\n    ],\r\n};
+===================================================================
+diff --git a/webpack.config.js b/webpack.config.js
+--- a/webpack.config.js	
++++ b/webpack.config.js	
+@@ -8,8 +8,7 @@
+     output: {
+         filename: 'bundle.js',
+         path: path.resolve(__dirname, 'dist'),
+-        assetModuleFilename: 'images/[name][ext][query]',
+-        publicPath: '/',
++        publicPath: '/', // Додає кореневий шлях для всіх ресурсів
+         clean: true,
+     },
+     module: {
+@@ -49,10 +48,11 @@
+     plugins: [
+         new CleanWebpackPlugin(),
+         new MiniCssExtractPlugin({
+-            filename: './src/css/main.css',
++            filename: 'styles/[name].css'
+         }),
+         new HtmlWebpackPlugin({
+-            template: './src/index.html',
++            template: './src/index.html', // Вихідний файл
++            filename: 'index.html', // Файл, який буде збережений у папці dist
+             inject: 'body',
+         }),
+     ],
